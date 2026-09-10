@@ -130,7 +130,7 @@ METHOD :GET
 
 `http_request for fetching movie detail`
 
-URL :localhost:8000/movie/
+URL :localhost:8000/movie/4/
 METHOD :GET
 
 
