@@ -130,7 +130,7 @@ METHOD :GET
 
 `http_request for fetching movie detail`
 
-URL :localhost:8000/movie/4/
+URL :localhost:8000/movie/
 METHOD :GET
 
 
@@ -151,3 +151,64 @@ BODY :{
 
 URL :localhost:8000/movie/5/
 METHOD :DELETE
+
+
+### hostipal_patient
+
+
+id	patient_name  assigned_doctor  department	appointment_date   status   consultation_fee
+
+1	Arun Kumar	   Dr. Rajesh	   Cardiology	  2026-09-10	  Conformed	      500
+2	Anjali Menon   Dr. Priya	   Dermatology	  2026-09-11	  Pending	      400
+3	Rahul Das	   Dr. Suresh	   Orthopedics	  2026-09-12	  Conformed	      600
+4	Sneha Nair	   Dr. Meera	   Pediatrics	  2026-09-13	  Completed	      350
+5	Vishnu R	   Dr. Anil	       General Medicine 2026-09-14	  Pending	      300
+
+
+`http_request for adding new patient`
+ URL :localhost:8000/patient/
+ METHOD : POST
+BODY :{
+   "patient_name":"surya"
+   "assigned_doctor":"Dr.vipin"
+   "department":"Cardiology"
+   "appointment_date":"2026-09-20"
+   "status":"conformed"
+   "consultation_fee":550
+
+}
+
+
+`http_request for list all patient`
+
+URL :localhost:8000/patient/
+METHOD :GET
+
+
+`http_request for fetching patient detail`
+
+URL :localhost:8000/patient/4/
+METHOD :GET
+
+
+`http_request for update patient`
+
+URL :localhost:8000/patient/4/
+METHOD :PUT
+BODY :{
+   "patient_name":"vysak"
+   "assigned_doctor":"Dr.vipin"
+   "department":"Cardiology"
+   "appointment_date":"2026-09-20"
+   "status":"pending"
+   "consultation_fee":550
+}
+
+
+
+`http_request for delete patient`
+
+URL :localhost:8000/patient/5/
+METHOD :DELETE
+
+
