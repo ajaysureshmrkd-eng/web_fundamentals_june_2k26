@@ -111,7 +111,43 @@ id      title      year     language        run_time
 ```
 
 `http_request for adding new movie`
+ URL :localhost:8000/movie/
+ METHOD : POST
+BODY :{
+   "title":"DC",
+   "year":2026,
+   "language":"malayalam",
+   "run_time":168
+
+}
+
+
 `http_request for list all movie`
+
+URL :localhost:8000/movie/
+METHOD :GET
+
+
 `http_request for fetching movie detail`
+
+URL :localhost:8000/movie/
+METHOD :GET
+
+
 `http_request for update movie`
+
+URL :localhost:8000/movie/4/
+METHOD :PUT
+BODY :{
+   "title":"drishyam",
+   "year":2026,
+   "language":"malayalam",
+   "run_time":163
+}
+
+
+
 `http_request for delete movie`
+
+URL :localhost:8000/movie/5/
+METHOD :DELETE
